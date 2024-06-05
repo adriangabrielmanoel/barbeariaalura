@@ -25,17 +25,68 @@
 
     <main>
 <form>
+
    <label for = "nomesobrenome"> nome e sobrenome </label>
-   <input type="text" id="nomesobrenome" >
-   <label for="gmail"> gmail </label>
-  <input tipe="text" id="gmail"</input>
+   <input type="text" id="nomesobrenome"class="input-padrao"required  >
+   <label for="email"> email</label>
+  <input tipe="text" id="email"class="input-padrao"required placeholder="seuemail@escola.pr.gov.br"></input>
   <label for = "telefone"> telefone</label>
-<input type = "text" id= "telefone"> </input>
-<input type="submit" value= "enviar formulario"> 
+<input type = "text" id= "telefone"class="input-padrao"required placeholder="(xx) xxxxx-xxxx"></input>
+
+<fieldset>
+
+
+<label for="mensagem">mensagem</label>
+<textarea cols="70" rows="10" id="mensagem"class="imput-padrao"required>
+</textarea>
+
+
+<p class= "teste" id="teste" style="color:red">como prefere nosso contato?</p>
+<label for = "radio-email"><input type="radio" name= "contato" value="email" id="radio-email" >email</label>
+
+<label for= "radio-telefone"><input type="radio" name= "contato" value= "telefone" id="radio-telefone">telefone</label>
+
+<label for= "radio-whatsapp"><input type="radio" name= "whatsapp" value= "whatsapp" id="radio-whatsapp"checked>whatsapp</label>
+
+</fieldset>
+
+<fieldset>
+<legend>horario de atendimento</legend>
+<select>
+	<option>manha
+		<option>tarde
+<option>noite</option>
+</select>
+</fieldset>
+
+<label class="checkbox"><input type="checkbox"checked> gostaria de receber nossas novidades por email?</label>
+
+	<input type="submit" value= "enviar formulario" class="enviar">
 
 </form>
+<table>
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+    </tbody>
+</table>
     </main>
-
 
     <footer>
       <img src="logo-branco.png">
